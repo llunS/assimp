@@ -38,6 +38,8 @@ SET(CMAKE_POLICY_DEFAULT_CMP0074 NEW)
 
 CMAKE_MINIMUM_REQUIRED( VERSION 3.0 )
 
+cmake_policy(SET CMP0077 NEW) # Enable override of normal variable over option cache variable.
+
 # Toggles the use of the hunter package manager
 option(HUNTER_ENABLED "Enable Hunter package manager support" OFF)
 
